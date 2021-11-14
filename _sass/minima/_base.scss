@@ -1,5 +1,6 @@
 html {
     font-size: $base-font-size;
+    background-image: url("../../assets/bg.jpg");
   }
   
   /**
@@ -32,7 +33,6 @@ html {
     min-height: 100vh;
     flex-direction: column;
     overflow-wrap: break-word;
-    background-image: url("../../assets/bg.jpg");
   }
   
   
