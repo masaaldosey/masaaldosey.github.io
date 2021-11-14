@@ -1,0 +1,15 @@
+# Site settings
+title: Vignesh Vaikundaraman
+email: v.vaikundaraman@physik.uni-muenchen.de
+description: > # this means to ignore newlines until "baseurl:"s
+# baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "https://vicky1997.github.io" # the base hostname & protocol for your site
+twitter_username: turbulenthuman
+github_username:  vicky1997
+permalink: /blog/:year/:month/:title.html
+gems:
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+theme: minima
