@@ -26,6 +26,8 @@ $content-width:    auto;
 $on-palm:          auto;
 $on-laptop:        auto;
 
+$background: url(assets/bg.jpg) no-repeat center center fixed;
+
 // Minima also includes a mixin for defining media queries.
 // Use media queries like this:
 // @include media-query($on-palm) {
