@@ -15,9 +15,13 @@ $spacing-unit:     30px;
 $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
-$background-image: url("https://masaaldosey.github.io/assets/bgrnd.png");
-$width:            100%;
-$background-size:  cover;
+html { 
+    background: url(assets/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
