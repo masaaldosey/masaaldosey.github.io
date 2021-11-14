@@ -1,1 +1,1 @@
-this repo contains the codebase for my personal website. it is a clean fork from this [repo](https://github.com/jabranham/github-pages-academic-starter-kit).
+contains the codebase for my personal website. it is a clean fork from this [repo](https://github.com/jabranham/github-pages-academic-starter-kit).
