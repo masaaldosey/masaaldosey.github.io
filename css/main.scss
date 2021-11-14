@@ -15,12 +15,8 @@ $spacing-unit:     30px;
 $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
-html { 
-    background: url(assets/bg.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.hero {
+    background: url('assets/bg.jpg');
   }
 
 $grey-color:       #828282;
