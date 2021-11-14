@@ -1,5 +1,6 @@
 html {
     font-size: $base-font-size;
+    background: url(assets/bg.jpg) no-repeat center center fixed;
   }
   
   /**
@@ -22,7 +23,6 @@ html {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     // background-color: $background-color;
-    // background-image: url("../../assets/bg.jpg");
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
        -moz-font-feature-settings: "kern" 1;
