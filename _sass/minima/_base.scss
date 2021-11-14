@@ -212,13 +212,13 @@ html {
     }
   }
   .wrapper-header {
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    padding-right: max(15px, 5%);
+    padding-left: max(15px, 5%);
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        padding-right: $spacing-unit;
-        padding-left: $spacing-unit;
+        padding-right: max(15px, 5%);
+        padding-left: max(15px, 5%);
     }
 }
   
