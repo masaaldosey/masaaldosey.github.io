@@ -13,7 +13,8 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
+// $background-color: #fdfdfd;
+$background-color: url(assets/bg.jpg) no-repeat center center fixed;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -25,8 +26,6 @@ $content-width:    auto;
 
 $on-palm:          auto;
 $on-laptop:        auto;
-
-$background: url(assets/bg.jpg) no-repeat center center fixed;
 
 // Minima also includes a mixin for defining media queries.
 // Use media queries like this:
