@@ -10,6 +10,6 @@ i am leela, from india. i am currently working at [agile robots ag](https://www.
     <a href="mailto:prabhatreddyk@gmail.com">email</a> · 
     <a href="https://twitter.com/masaaldosey">twitter</a> · 
     <a href="https://github.com/masaaldosey">github</a> · 
-    <a href="https://www.linkedin.com/in/prabhat-reddy)">linkedin</a> · 
+    <a href="https://www.linkedin.com/in/prabhat-reddy">linkedin</a> · 
     <a href="https://scholar.google.com/citations?user=ugHOnqQAAAAJ&hl=en">google scholar</a>
 </div>
