@@ -3,7 +3,7 @@ layout: page
 title: research
 permalink: /research/
 ---
-i am broadly interested in the development and application of machine learning methods. i am curious about developing AI-based tools for data wrangling to automate the tedious manual tasks of data preparation and cleaning. for more about me, checkout my [cv](/cv/).
+i am broadly interested in the development and application of machine learning methods. i am curious about developing AI-based tools for data wrangling to automate the tedious manual tasks of data preparation and cleaning. for more, here is my [cv](/cv/).
 
 ### publications:
 - [Generalized Physics-Informed Machine Learning for Numerically Solved Transient Physical Systems.](http://ceur-ws.org/Vol-2964/article_184.pdf) In: Association for the Advancement of Artificial Intelligence - Machine Learning with Physics Sciences 2021.
