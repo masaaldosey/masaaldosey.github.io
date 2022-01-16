@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-i am leela, from india. i am currently working at [agile robots ag](https://www.agile-robots.com/), munich. i hold a masters degree in computational science and engineering from the [technical university of munich](https://www.in.tum.de/fuer-studieninteressierte/master-studiengaenge/computational-science-and-engineering/). i dislike the use of capital letters unless it is absolutely necessary. in my free time, i like to play (any) sports, watch movies and [write](/blog/).
+i am leela, from india. i graduated from the [technical university of munich](https://www.in.tum.de/fuer-studieninteressierte/master-studiengaenge/computational-science-and-engineering/) and currently working at [agile robots ag](https://www.agile-robots.com/). i avoid the use of capital letters. i like to play (any) sports, watch movies and [write](/blog/) in my free time.
 
 
 <p style="text-align:center;"><img  width="300px" height= "300px" src= "https://masaaldosey.github.io/assets/pfp.jpg"></p>
