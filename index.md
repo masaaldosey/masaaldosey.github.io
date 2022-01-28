@@ -6,7 +6,7 @@ i am leela, from india. i graduated from the [technical university of munich](ht
 
 
 <center>
-    <img  width="300px" height= "300px" src= "https://masaaldosey.github.io/assets/pfp.jpg" alt="picture of self" class="center">
+    <img  width="300px" height= "300px" src= "https://masaaldosey.github.io/assets/pfp.jpg" alt="self" class="center">
 </center>
 
 <div align="center">
