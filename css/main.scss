@@ -2,13 +2,6 @@
 
 @charset "utf-8";
 
-// defining custom font family
-@font-face {
-    font-family: "typewriter"; /*a name to be used later*/
-    src: url("../_fonts/MyUnderwood.ttf") format('truetype'); /*URL to font*/
-}
-// Our variables
-$base-font-family: "typewriter";
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
