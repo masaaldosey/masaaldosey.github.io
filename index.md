@@ -5,8 +5,9 @@ i am leela, from india. i graduated from the [technical university of munich](ht
 
 
 <!-- <p style="text-align:center;"> -->
-
-<img  width="300px" height= "300px" src= "https://masaaldosey.github.io/assets/pfp.jpg" alt="picture of self" class="center">
+<center>
+    <img  width="300px" height= "300px" src= "https://masaaldosey.github.io/assets/pfp.jpg" alt="picture of self" class="center">
+</center>
 
 <!-- </p> -->
 
