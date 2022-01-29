@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="/css/normalize.min.css">
     <link rel="stylesheet" href="/css/navbar.min.css">
-    <link rel="icon" type="image/png" href="https://gertjanvandenburg.com/files/favicon64.png">
+    <link rel="icon" type="image/png" href="/files/favicon64.png">
 
     <script type="text/javascript">
         var st = localStorage.getItem("theme");
@@ -44,15 +44,9 @@
 
     <link rel="stylesheet" href="/css/blog.min.css">
 
-    <!-- <meta name="twitter:card" content="summary">
-    <meta name="twitter:creator" content="@GjjvdBurg">
-    <meta name="twitter:domain" content="https://gertjanvandenburg.com"> -->
     <meta property="og:url" content={{ page.url | relative_url}}>
     <meta property="og:title" content={{ page.title }}>
     <meta property="og:description" content={{ page.summary }}>
-
-
-    <!-- <meta property="twitter:description" content="Overview of tools, SASS, and JS"> -->
 </head>
 
 <body>
@@ -134,34 +128,31 @@
                 {{ content }}
 
                 <footer>
-                    <div id="social">
+                    <!-- <div id="social">
                         <div id="kudos">
-                            <figure class="kudo kudoable" data-id="{{ page.url | relative_url }}">
-                                <a class="kudobject" style="cursor: default;">
-                                    <div class="filling"></div>
+                            <figure class="kudo kudoable" data-id={{ page.url | relative_url }}>
+                                <a class="kudobject " style="cursor: default; ">
+                                    <div class="filling "></div>
                                 </a>
-                                <div class="count">
-                                    <span class="num">3</span>
-                                    <span class="txt">kudos</span>
+                                <div class="count ">
+                                    <span class="num ">3</span>
+                                    <span class="txt ">kudos</span>
                                 </div>
                             </figure>
                         </div>
-                    </div>
-
-
-
+                    </div> -->
                     <hr>
-                    <div id="no-comments">
-                        <span>
-                i don't have comments on this blog, but if you'd like to leave positive feedback you can tap the Kudo button above. Alternatively, you can contact me by <a href="mailto:prabhatreddyk+blog@gmail.com">Email</a> or via <a href="https://twitter.com/masaaldosey" target="_blank">Twitter</a>.
-            </span>
+                    <div id="no-comments ">
+                        <br>
+                        <span>i don't have comments on this blog, but if you'd like to leave positive feedback you can contact me by <a href="mailto:prabhatreddyk+blog@gmail.com ">Email</a> or via <a href="https://twitter.com/masaaldosey
+                                " target="_blank ">Twitter</a>.</span>
                     </div>
 
                 </footer>
         </article>
     </main>
 
-    <script src="/js/highlight.pack.js"></script>
+    <script src="/js/highlight.pack.js "></script>
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             document.querySelectorAll('pre code').forEach((block) => {
@@ -171,16 +162,16 @@
     </script>
 
     <footer>
-        <span id="copyright">
+        <span id="copyright ">
         &hairsp; © Leela Sai Prabhat, 2022.
       </span>
     </footer>
 
-    <script src="/js/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="/js/jquery.slicknav.min.js"></script>
-    <script src="/js/navbar.min.js"></script>
-    <script src="/js/jquery.cookie.min.js"></script>
-    <script src="/js/kudos.min.js"></script>
+    <script src="/js/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin=" anonymous "></script>
+    <script src="/js/jquery.slicknav.min.js "></script>
+    <script src="/js/navbar.min.js "></script>
+    <script src="/js/jquery.cookie.min.js "></script>
+    <script src="/js/kudos.min.js "></script>
     <script>
         $(function() {
             $('#menu').slicknav({
