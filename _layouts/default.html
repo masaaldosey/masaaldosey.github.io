@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Hugo 0.68.3">
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#8b0000">
+    <meta name="color-scheme" content="dark light">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Leela Sai Prabhat
+    </title>
+
+
+    <link rel="/feed.xml" type="application/rss+xml" title="Leela Sai Prabhat">
+
+
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/navbar.min.css">
+    <link rel="icon" type="image/png" href="/files/favicon64.png">
+
+    <script type="text/javascript">
+        var st = localStorage.getItem("theme");
+        if (st == "dark") {
+            document.documentElement.classList.toggle("dark-theme");
+        } else if (st == "light") {
+            document.documentElement.classList.toggle("light-theme");
+        }
+
+        window.addEventListener('load', function() {
+            const pD = window.matchMedia("(prefers-color-scheme: dark)");
+            const tt = document.querySelector("#darkmode");
+            tt.addEventListener('change', function() {
+                if (pD.matches) {
+                    document.documentElement.classList.toggle("light-theme");
+                    var theme = document.documentElement.classList.contains("light-theme") ? "light" : "dark";
+                } else {
+                    document.documentElement.classList.toggle("dark-theme");
+                    var theme = document.documentElement.classList.contains("dark-theme") ? "dark" : "light";
+                }
+                localStorage.setItem("theme", theme);
+            });
+        });
+    </script>
+
+
+    <link rel="stylesheet" href="/css/main.min.css">
+    <meta name="google-site-verification" content="jf5lQjtFpdbU4JBokYmYJWNyXjIqJvbDENV0RIOMY58">
+    <meta name="description" content="personal website of leela sai prabhat">
+</head>
+
+<body>
+
+    <nav>
+        <div class="slicknav_menu"><a href="#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt"></span><span class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
+            <ul class="slicknav_nav slicknav_hidden" style="display: none;" aria-hidden="true" role="menu">
+                <li>
+                    <label for="darkmode">
+          <a class="menu-item" tabindex="-1">Lights</a>
+          <input type="checkbox">
+          <div></div>
+        </label>
+                </li>
+
+                <li>
+                    <a class="menu-item" href="/blog/" role="menuitem" tabindex="-1">Blog</a>
+                </li>
+
+                <li>
+                    <a class="menu-item" href="/research/" role="menuitem" tabindex="-1">Research</a>
+                </li>
+
+            </ul>
+        </div>
+        <a class="navbar-brand" href="/">
+            <span class="brand-title">Leela</span><span class="brand-title brand-hidden"> Sai Prabhat</span><span class="brand-title brand-dot">.</span>
+        </a>
+        <ul id="menu">
+            <li>
+                <label for="darkmode">
+          <a class="menu-item">Lights</a>
+          <input type="checkbox" id="darkmode">
+          <div id="themetoggleimg"></div>
+        </label>
+            </li>
+
+            <li>
+                <a class="menu-item" href="/blog/">Blog</a>
+            </li>
+
+            <li>
+                <a class="menu-item" href="/research/">Research</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="box">
+            <div class="photo">
+                <picture>
+                    <source media="(max-width: 899px)" type="image/webp" srcset="/files/leela-400w-square.webp">
+                    <source media="(max-width: 899px)" type="image/jpeg" srcset="/files/leela-400w-square.jpg">
+                    <source media="(min-width: 900px)" type="image/webp" srcset="/files/leela-750w.webp">
+                    <source media="(min-width: 900px)" type="image/jpeg" srcset="/files/leela-750w.jpg">
+                    <img id="me" src="/files/leela-750w.jpg" width="175" height="175" alt="Photo of leela">
+                </picture>
+            </div>
+            <div class="message">
+                Hi, I'm Leela, a software developer at <a target="_blank" rel="noopener" href="https://www.agile-robots.com/">Agile Robots AG</a>.
+                <br>
+                <br> Previously, I was a masters student at
+                <a target="_blank" rel="noopener" href="https://www.in.tum.de/fuer-studieninteressierte/master-studiengaenge/computational-science-and-engineering/">The Technical University of Munich</a> where I majored in Computational Science and Engineering.
+                See my <a href="/research/">research page</a> for an overview of my academic work.
+                <br>
+                <br> To know more about me, check out my <a href="/files/cv.pdf">CV</a>.
+                <br>
+                <br> Please take a look around, or get in touch!
+                <br>
+                <br>
+                <a href="mailto:prabhatreddyk@gmail.com">Email</a> ·
+                <a target="_blank" rel="noopener" href="https://twitter.com/masaaldosey">Twitter</a> ·
+                <a target="_blank" rel="noopener" href="https://github.com/masaaldosey">GitHub</a> ·
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/prab hat-reddy">LinkedIn</a> ·
+                <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=ugHOnqQAAAAJ&amp;hl=en">Google Scholar</a>
+            </div>
+        </div>
+        <div class="bg-image-wrapper">
+            <img src="/css/tiny_backdrop.jpg" class="bg-image loaded" alt="backdrop">
+            <noscript><img class="bg-image" src="/css/backdrop.jpg" style="opacity:1; filter:blur(0)" alt="backdrop"></noscript>
+            <img src="/css/backdrop.jpg" class="loaded"></div>
+    </main>
+
+</body>
+
+</html>

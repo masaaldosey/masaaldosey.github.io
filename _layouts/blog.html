@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us" class="dark-theme">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#8b0000">
+    <meta name="color-scheme" content="dark light">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Leela Sai Prabhat · Blog
+    </title>
+
+
+    <link rel="/blog/feed.xml" type="application/rss+xml" title="Leela Sai Prabhat">
+
+
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/navbar.min.css">
+    <link rel="icon" type="image/png" href="/files/favicon64.png">
+
+    <script type="text/javascript">
+        var st = localStorage.getItem("theme");
+        if (st == "dark") {
+            document.documentElement.classList.toggle("dark-theme");
+        } else if (st == "light") {
+            document.documentElement.classList.toggle("light-theme");
+        }
+
+        window.addEventListener('load', function() {
+            const pD = window.matchMedia("(prefers-color-scheme: dark)");
+            const tt = document.querySelector("#darkmode");
+            tt.addEventListener('change', function() {
+                if (pD.matches) {
+                    document.documentElement.classList.toggle("light-theme");
+                    var theme = document.documentElement.classList.contains("light-theme") ? "light" : "dark";
+                } else {
+                    document.documentElement.classList.toggle("dark-theme");
+                    var theme = document.documentElement.classList.contains("dark-theme") ? "dark" : "light";
+                }
+                localStorage.setItem("theme", theme);
+            });
+        });
+    </script>
+
+
+    <link rel="stylesheet" href="/css/blog_list.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="slicknav_menu"><a href="#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt"></span><span class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
+            <ul class="slicknav_nav slicknav_hidden" style="display: none;" aria-hidden="true" role="menu">
+                <li>
+                    <label for="darkmode">
+          <a class="menu-item" tabindex="-1">Lights</a>
+          <input type="checkbox">
+          <div></div>
+        </label>
+                </li>
+
+                <li>
+                    <a class="menu-item active" href="/blog/" role="menuitem" tabindex="-1">Blog</a>
+                </li>
+
+                <li>
+                    <a class="menu-item" href="/research/" role="menuitem" tabindex="-1">Research</a>
+                </li>
+
+            </ul>
+        </div>
+        <a class="navbar-brand" href="/">
+            <span class="brand-title">Leela</span><span class="brand-title brand-hidden"> Sai Prabhat</span><span class="brand-title brand-dot">.</span>
+        </a>
+        <ul id="menu">
+            <li>
+                <label for="darkmode">
+          <a class="menu-item">Lights</a>
+          <input type="checkbox" id="darkmode">
+          <div id="themetoggleimg"></div>
+        </label>
+            </li>
+
+            <li>
+                <a class="menu-item active" href="/blog/">Blog</a>
+            </li>
+
+            <li>
+                <a class="menu-item" href="/research/">Research</a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <main class="container">
+        <section id="main">
+            <div class="overview">
+                <h1 id="title">Blog</h1>
+                <ul id="list">
+                    {% for post in site.posts %}
+                    <li>
+                        <a href={{ post.url | absolute_url}}>
+                            <div class="entry">
+                                <div class="title-row">
+                                    <div class="title">{{ post.title }}</div>
+                                    <div class="meta">{{ post.date | date: "%b %-d, %Y " }}</div>
+                                </div>
+                                <div class="summary">{{ post.summary }}</div>
+                            </div>
+                        </a>
+                    </li>
+                    {% endfor %}
+
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span id="copyright">
+        &hairsp; © Leela Sai Prabhat, 2022.
+    </footer>
+
+    <script src="/js/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin=" anonymous "></script>
+    <script src="/js/jquery.slicknav.min.js "></script>
+    <script src="/js/navbar.min.js "></script>
+    <script src="/js/jquery.cookie.min.js "></script>
+
+    <script src="/js/kudos.min.js "></script>
+    <script>
+        $(function() {
+            $('#menu').slicknav({
+                prependTo: 'nav',
+                label: ''
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
