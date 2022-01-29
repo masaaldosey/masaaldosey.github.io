@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#8b0000">
+    <meta name="color-scheme" content="dark light">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Leela Sai Prabhat · Research
+    </title>
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/navbar.min.css">
+    <link rel="icon" type="image/png" href="/files/favicon64.png">
+
+    <script type="text/javascript">
+        var st = localStorage.getItem("theme");
+        if (st == "dark") {
+            document.documentElement.classList.toggle("dark-theme");
+        } else if (st == "light") {
+            document.documentElement.classList.toggle("light-theme");
+        }
+
+        window.addEventListener('load', function() {
+            const pD = window.matchMedia("(prefers-color-scheme: dark)");
+            const tt = document.querySelector("#darkmode");
+            tt.addEventListener('change', function() {
+                if (pD.matches) {
+                    document.documentElement.classList.toggle("light-theme");
+                    var theme = document.documentElement.classList.contains("light-theme") ? "light" : "dark";
+                } else {
+                    document.documentElement.classList.toggle("dark-theme");
+                    var theme = document.documentElement.classList.contains("dark-theme") ? "dark" : "light";
+                }
+                localStorage.setItem("theme", theme);
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="/css/research.min.css">
+    <script>
+        function showHideAbstract(id) {
+            var lbl = document.getElementById("label-" + id);
+            var el = document.getElementById("abstract-" + id);
+            if (el.style.display === "none") {
+                el.style.display = "block";
+                lbl.innerHTML = "<b>&#9662; Hide abstract</b>";
+            } else {
+                el.style.display = "none";
+                lbl.innerHTML = "<b>&#9656; Show abstract</b>";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="slicknav_menu"><a href="#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt"></span><span class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
+            <ul class="slicknav_nav slicknav_hidden" style="display: none;" aria-hidden="true" role="menu">
+                <li>
+                    <label for="darkmode">
+          <a class="menu-item" tabindex="-1">Lights</a>
+          <input type="checkbox">
+          <div></div>
+        </label>
+                </li>
+
+                <li>
+                    <a class="menu-item" href="/blog/" role="menuitem" tabindex="-1">Blog</a>
+                </li>
+
+                <li>
+                    <a class="menu-item active" href="/research/" role="menuitem" tabindex="-1">Research</a>
+                </li>
+
+            </ul>
+        </div>
+        <a class="navbar-brand" href="/">
+            <span class="brand-title">Leela</span><span class="brand-title brand-hidden"> Sai Prabhat</span><span class="brand-title brand-dot">.</span>
+        </a>
+        <ul id="menu">
+            <li>
+                <label for="darkmode">
+          <a class="menu-item">Lights</a>
+          <input type="checkbox" id="darkmode">
+          <div id="themetoggleimg"></div>
+        </label>
+            </li>
+
+            <li>
+                <a class="menu-item" href="/blog/">Blog</a>
+            </li>
+            <li>
+                <a class="menu-item active" href="/research/">Research</a>
+            </li>
+
+        </ul>
+    </nav>
+    <main class="container">
+        <section id="main">
+            <div class="overview">
+                <h1 id="title">Research</h1>
+                <div class="content">
+
+
+                    <h2 id="research-interests">Research Interests</h2>
+
+                    <div class="interests">
+                        <p>
+                            I am broadly interested in the development and application of machine learning methods. I am curious about developing AI-based tools for data synthesis to automate the tedious manual tasks of data acquisition, preparation and cleaning. I've worked on
+                            machine learning and deep learning models, parallel algorithms, Bayesian programming, and computational plasma physics, among other things.
+                        </p>
+                    </div>
+
+                    <p>For more about me, check out my <a href="/files/cv.pdf">CV</a>.</p>
+
+                    <h2 id="publications">Publications</h2>
+                    <ul>
+                        <li><div class="publication" itemscope="" itemtype="https://schema.org/ScholarlyArticle">
+                                <a target="_blank" href="http://ceur-ws.org/Vol-2964/article_184.pdf"><span itemprop="name">Generalized Physics-Informed Machine Learning for Numerically Solved Transient Physical Systems</span></a>&nbsp;(<a target="_blank"
+                                    href="https://sites.google.com/view/aaai-mlps/proceedings">HTML</a>;&nbsp;
+                                <a target="_blank" href="/papers/article_184.pdf">PDF</a>)<br>
+
+
+                                <span itemprop="author">Rishith Ellath Meethal</span> and
+                                <span itemprop="author">Leela Sai Prabhat Reddy Kondamadugul</span> and
+                                <span itemprop="author">Mohamed Khalil</span> and
+                                <span itemprop="author">Birgit Obs</span> and
+                                <span itemprop="author">Roland Wüchner</span>
+
+                                <div itemprop="isPartOf" itemscope="" itemtype="http://schema.org/PublicationIssue" itemid="#issue"><span itemscope="" itemtype="https://schema.org/Periodical" itemid="#periodical"><span itemprop="name"><i>Proceedings of The AAAI 2021 Spring Symposium</i></span></span>,
+
+                                    <span itemprop="datePublished">2021</span>.
+                                </div>
+
+                                <div class="abstract">
+                                    <span class="abstract-hdl" id="label-wrangling" onclick="showHideAbstract('wrangling')"><b>▸ Show abstract</b></span>
+                                    <span class="abstract-txt" id="abstract-wrangling" itemprop="description" style="display: none;">
+                                        We introduce a generalized physics-informed machine learning workflow to accurately predict the behavior of a transient physical system with enhanced physics conformity. A
+                                        physics-guided machine learning (PGML) model is developed to achieve this goal. Our model consists of two main
+                                        parts for a given transient system: (1) a physics-based numerical model which solves the system using conventional numerical methods and returns the stiffness matrix and force vector
+                                        at each time step; (2) a neural network (NN) based machine
+                                        learning (ML) surrogate model which predicts the solution
+                                        of the system using a custom physics-guided loss function
+                                        constructed from system matrix and force vector. The proposed workflow results in a physics-aware Machine Learning (ML) model. Such a trained model can be used to avoid
+                                        the prohibitively expensive step of running a transient system
+                                        simulation at the desired resolutions in space and time. We
+                                        demonstrate and test the model on single-degree-of-freedom
+                                        (SDOF) and multiple-degree-of-freedom (MDOF) system's
+                                        examples from structural dynamics. Our results show that the
+                                        method predicts the simulation results accurately. The proposed workflow can be directly adapted to any other physics
+                                        and numerical method as it is not tailored towards a specific
+                                        physics or a numerical method.
+                                    </span>
+                                </div>
+                                <div style="text-align: center;">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BcCfCtUsNMc" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </li>
+</body>
