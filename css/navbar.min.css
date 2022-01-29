@@ -1,0 +1,397 @@
+@font-face {
+    font-family: et-book;
+    src: url(../fonts/et-book/et-book-roman-line-figures.eot);
+    src: url(../fonts/et-book/et-book-roman-line-figures.eot?#iefix) format("embedded-opentype"), url(../fonts/et-book/et-book-roman-line-figures.woff) format("woff"), url(../fonts/et-book/et-book-roman-line-figures.ttf) format("truetype"), url(../fonts/et-book/et-book-roman-line-figures.svg#etbookromanosf) format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: et-book;
+    src: url(../fonts/et-book/et-book-display-italic-old-style-figures.eot);
+    src: url(../fonts/et-book/et-book-display-italic-old-style-figures.eot?#iefix) format("embedded-opentype"), url(../fonts/et-book/et-book-display-italic-old-style-figures.woff) format("woff"), url(../fonts/et-book/et-book-display-italic-old-style-figures.ttf) format("truetype"), url(../fonts/et-book/et-book-display-italic-old-style-figures.svg#etbookromanosf) format("svg");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: et-book;
+    src: url(../fonts/et-book/et-book-bold-line-figures.eot);
+    src: url(../fonts/et-book/et-book-bold-line-figures.eot?#iefix) format("embedded-opentype"), url(../fonts/et-book/et-book-bold-line-figures.woff) format("woff"), url(../fonts/et-book/et-book-bold-line-figures.ttf) format("truetype"), url(../fonts/et-book/et-book-bold-line-figures.svg#etbookromanosf) format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: et-book-roman-old-style;
+    src: url(../fonts/et-book/et-book-roman-old-style-figures.eot);
+    src: url(../fonts/et-book/et-book-roman-old-style-figures.eot?#iefix) format("embedded-opentype"), url(../fonts/et-book/et-book-roman-old-style-figures.woff) format("woff"), url(../fonts/et-book/et-book-roman-old-style-figures.ttf) format("truetype"), url(../fonts/et-book/et-book-roman-old-style-figures.svg#etbookromanosf) format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Lato Black";
+    src: url(../fonts/lato/Lato-Black.eot);
+    src: url(../fonts/lato/Lato-Black.eot?#iefix) format("embedded-opentype"), url(../fonts/lato/Lato-Black.woff2) format("woff2"), url(../fonts/lato/Lato-Black.woff) format("woff"), url(../fonts/lato/Lato-Black.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Lato Light";
+    src: url(../fonts/lato/Lato-Light.eot);
+    src: url(../fonts/lato/Lato-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/lato/Lato-Light.woff2) format("woff2"), url(../fonts/lato/Lato-Light.woff) format("woff"), url(../fonts/lato/Lato-Light.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Lato Regular";
+    src: url(../fonts/lato/Lato-Regular.eot);
+    src: url(../fonts/lato/Lato-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/lato/Lato-Regular.woff2) format("woff2"), url(../fonts/lato/Lato-Regular.woff) format("woff"), url(../fonts/lato/Lato-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "LatoLatin Black";
+    src: url(../fonts/latolatin/LatoLatin-Black.eot);
+    src: url(../fonts/latolatin/LatoLatin-Black.eot?#iefix) format("embedded-opentype"), url(../fonts/latolatin/LatoLatin-Black.woff2) format("woff2"), url(../fonts/latolatin/LatoLatin-Black.woff) format("woff"), url(../fonts/latolatin/LatoLatin-Black.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "LatoLatin Light";
+    src: url(../fonts/latolatin/LatoLatin-Light.eot);
+    src: url(../fonts/latolatin/LatoLatin-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/latolatin/LatoLatin-Light.woff2) format("woff2"), url(../fonts/latolatin/LatoLatin-Light.woff) format("woff"), url(../fonts/latolatin/LatoLatin-Light.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "LatoLatin Regular";
+    src: url(../fonts/latolatin/LatoLatin-Regular.eot);
+    src: url(../fonts/latolatin/LatoLatin-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/latolatin/LatoLatin-Regular.woff2) format("woff2"), url(../fonts/latolatin/LatoLatin-Regular.woff) format("woff"), url(../fonts/latolatin/LatoLatin-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+:root {
+    --col-bg-color: #f9f9eb;
+    --text-color: #111111;
+    --bg-color: #fffff8;
+    --highlight-color: #8b0000;
+    --border-color: #111111;
+    --hljs-bg-color: #f9f9eb;
+    --hljs-base-color: #4d4d4c;
+    --hljs-comment-color: #8e908c;
+    --hljs-variable-color: #c82829;
+    --hljs-number-color: #f5871f;
+    --hljs-attr-color: #236ed0;
+    --hljs-string-color: #718c00;
+    --hljs-title-color: #4271ae;
+    --hljs-keyword-color: #8959a8;
+    --theme-toggle-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNjcuNjUiIHdpZHRoPSI2Ny42NSI+PHBhdGggZD0iTTUwLjAyIDY0LjI0YTM1LjUyIDM1LjUyIDAgMDEtMzQuMi0zLjM1QTM1LjUyIDM1LjUyIDAgMDEuNTQgMzAuMjRhMzUuNCAzNS40IDAgMDExNy42NC0yOS4yIDM5LjA2IDM5LjA2IDAgMDA0LjQyIDMyLjIgMzguODIgMzguODIgMCAwMDQ0IDE2LjIgMzUuMzMgMzUuMzMgMCAwMS0xNi41OCAxNC44eiIgZmlsbD0iIzExMSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9Ii45ODc1IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPjwvc3ZnPg==");
+    --theme-toggle-text: " Off"
+}
+
+:root img {
+    filter: none
+}
+
+:root.dark-theme {
+    --col-bg-color: #1d1f21;
+    --text-color: #fffff1;
+    --bg-color: #2c2c2c;
+    --highlight-color: #f06767;
+    --border-color: #fffff1;
+    --hljs-bg-color: #1d1f21;
+    --hljs-base-color: #c5c8c6;
+    --hljs-comment-color: #969896;
+    --hljs-variable-color: #cc6666;
+    --hljs-number-color: #de935f;
+    --hljs-attr-color: #f0c674;
+    --hljs-string-color: #b5bd68;
+    --hljs-title-color: #81a2be;
+    --hljs-keyword-color: #b294bb;
+    --theme-toggle-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTEyIDlhMyAzIDAgMTEwIDYgMyAzIDAgMDEwLTZ6bTAtMmE1IDUgMCAxMDAgMTAgNSA1IDAgMDAwLTEwem0tNC4xOC0uNmwtMy42LTMuNi0xLjQxIDEuNDIgMy42IDMuNkE3IDcgMCAwMTcuOCA2LjR6TTEyIDVjLjM0IDAgLjY3LjAzIDEgLjA4VjBoLTJ2NS4wOGMuMzMtLjA1LjY2LS4wOCAxLS4wOHptNS42IDIuODFsMy42LTMuNTktMS40Mi0xLjQxLTMuNiAzLjZjLjU0LjQgMS4wMi44NyAxLjQyIDEuNHpNNSAxMmMwLS4zNC4wMy0uNjcuMDgtMUgwdjJoNS4wOEE3LjAzIDcuMDMgMCAwMTUgMTJ6bTExLjE4IDUuNmwzLjYgMy42IDEuNDEtMS40Mi0zLjU5LTMuNmE3LjEgNy4xIDAgMDEtMS40MiAxLjQyek02LjQgMTYuMThsLTMuNiAzLjYgMS40MiAxLjQxIDMuNi0zLjZhNy4wNyA3LjA3IDAgMDEtMS40Mi0xLjR6TTE4LjkyIDExYTcuMDMgNy4wMyAwIDAxMCAySDI0di0yaC01LjA4ek0xMiAxOWMtLjM0IDAtLjY3LS4wMy0xLS4wOFYyNGgydi01LjA4Yy0uMzMuMDUtLjY2LjA4LTEgLjA4eiIgZmlsbD0iI2ZmZmZmOCIvPjwvc3ZnPg==");
+    --theme-toggle-text: " On"
+}
+
+:root.dark-theme img {
+    filter: brightness(.8) contrast(1.2)
+}
+
+@media (prefers-color-scheme:dark) {
+    :root {
+        --col-bg-color: #1d1f21;
+        --text-color: #fffff1;
+        --bg-color: #2c2c2c;
+        --highlight-color: #f06767;
+        --border-color: #fffff1;
+        --hljs-bg-color: #1d1f21;
+        --hljs-base-color: #c5c8c6;
+        --hljs-comment-color: #969896;
+        --hljs-variable-color: #cc6666;
+        --hljs-number-color: #de935f;
+        --hljs-attr-color: #f0c674;
+        --hljs-string-color: #b5bd68;
+        --hljs-title-color: #81a2be;
+        --hljs-keyword-color: #b294bb;
+        --theme-toggle-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTEyIDlhMyAzIDAgMTEwIDYgMyAzIDAgMDEwLTZ6bTAtMmE1IDUgMCAxMDAgMTAgNSA1IDAgMDAwLTEwem0tNC4xOC0uNmwtMy42LTMuNi0xLjQxIDEuNDIgMy42IDMuNkE3IDcgMCAwMTcuOCA2LjR6TTEyIDVjLjM0IDAgLjY3LjAzIDEgLjA4VjBoLTJ2NS4wOGMuMzMtLjA1LjY2LS4wOCAxLS4wOHptNS42IDIuODFsMy42LTMuNTktMS40Mi0xLjQxLTMuNiAzLjZjLjU0LjQgMS4wMi44NyAxLjQyIDEuNHpNNSAxMmMwLS4zNC4wMy0uNjcuMDgtMUgwdjJoNS4wOEE3LjAzIDcuMDMgMCAwMTUgMTJ6bTExLjE4IDUuNmwzLjYgMy42IDEuNDEtMS40Mi0zLjU5LTMuNmE3LjEgNy4xIDAgMDEtMS40MiAxLjQyek02LjQgMTYuMThsLTMuNiAzLjYgMS40MiAxLjQxIDMuNi0zLjZhNy4wNyA3LjA3IDAgMDEtMS40Mi0xLjR6TTE4LjkyIDExYTcuMDMgNy4wMyAwIDAxMCAySDI0di0yaC01LjA4ek0xMiAxOWMtLjM0IDAtLjY3LS4wMy0xLS4wOFYyNGgydi01LjA4Yy0uMzMuMDUtLjY2LjA4LTEgLjA4eiIgZmlsbD0iI2ZmZmZmOCIvPjwvc3ZnPg==");
+        --theme-toggle-text: " On"
+    }
+    :root img {
+        filter: brightness(.8) contrast(1.2)
+    }
+    :root.light-theme {
+        --col-bg-color: #f9f9eb;
+        --text-color: #111111;
+        --bg-color: #fffff8;
+        --highlight-color: #8b0000;
+        --border-color: #111111;
+        --hljs-bg-color: #f9f9eb;
+        --hljs-base-color: #4d4d4c;
+        --hljs-comment-color: #8e908c;
+        --hljs-variable-color: #c82829;
+        --hljs-number-color: #f5871f;
+        --hljs-attr-color: #236ed0;
+        --hljs-string-color: #718c00;
+        --hljs-title-color: #4271ae;
+        --hljs-keyword-color: #8959a8;
+        --theme-toggle-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNjcuNjUiIHdpZHRoPSI2Ny42NSI+PHBhdGggZD0iTTUwLjAyIDY0LjI0YTM1LjUyIDM1LjUyIDAgMDEtMzQuMi0zLjM1QTM1LjUyIDM1LjUyIDAgMDEuNTQgMzAuMjRhMzUuNCAzNS40IDAgMDExNy42NC0yOS4yIDM5LjA2IDM5LjA2IDAgMDA0LjQyIDMyLjIgMzguODIgMzguODIgMCAwMDQ0IDE2LjIgMzUuMzMgMzUuMzMgMCAwMS0xNi41OCAxNC44eiIgZmlsbD0iIzExMSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9Ii45ODc1IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPjwvc3ZnPg==");
+        --theme-toggle-text: " Off"
+    }
+    :root.light-theme img {
+        filter: none
+    }
+}
+
+nav {
+    background: var(--bg-color);
+    height: 40px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    transition: top .2s ease-in-out;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: var(--border-color);
+    z-index: 1
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1px 10px 0 0;
+    overflow: hidden;
+    float: right;
+    text-align: right;
+    width: auto
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: .5rem 0
+}
+
+nav a.menu-item {
+    display: block;
+    padding: 0 10px 0 10px;
+    font-family: "LatoLatin Black";
+    font-size: 20px;
+    color: var(--text-color);
+    text-decoration: none;
+    text-shadow: none
+}
+
+nav a.active {
+    color: var(--highlight-color)
+}
+
+nav label {
+    display: block
+}
+
+nav label a.menu-item {
+    display: none
+}
+
+nav label input {
+    display: none
+}
+
+nav label,
+nav label:hover {
+    cursor: pointer
+}
+
+nav #themetoggleimg {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: var(--theme-toggle-image)
+}
+
+.navbar-brand {
+    text-decoration: none;
+    text-shadow: none;
+    padding: 0 0 0 5px;
+    line-height: 40px;
+    font-family: "LatoLatin Black";
+    font-size: 30px;
+    color: var(--text-color)
+}
+
+.brand-dot {
+    line-height: 40px;
+    color: var(--highlight-color)
+}
+
+.slicknav_menu {
+    display: none
+}
+
+.nav-up {
+    top: -42px
+}
+
+@media screen and (max-width:760px) {
+    #menu {
+        display: none
+    }
+    .slicknav_btn {
+        background: 0 0;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, .75);
+        border-radius: 4px;
+        cursor: pointer;
+        position: relative;
+        display: block;
+        float: right;
+        line-height: 1.125em
+    }
+    .slicknav_btn .slicknav_icon-bar+.slicknav_icon-bar {
+        margin-top: 4px
+    }
+    .slicknav_menu {
+        display: block;
+        width: 50%;
+        height: 40px;
+        float: right;
+        background: var(--bg-color);
+        padding: 0;
+        font-size: 16px
+    }
+    .slicknav_menu::after {
+        clear: both
+    }
+    .slicknav_menu::after,
+    .slicknav_menu::before {
+        content: " ";
+        display: table
+    }
+    .slicknav_menu .slicknav_icon {
+        width: 30px;
+        height: .875em;
+        padding: 4px;
+        margin: 7px 15px 0 0;
+        float: left
+    }
+    .slicknav_menu .slicknav_icon::before {
+        background: 0 0;
+        width: 1.125em;
+        height: .875em;
+        display: block;
+        content: "";
+        position: absolute
+    }
+    .slicknav_menu .slicknav_icon-bar {
+        height: 3px;
+        box-shadow: none;
+        background-color: var(--highlight-color);
+        width: inherit;
+        display: block;
+        border-radius: 1px
+    }
+    .slicknav_menu .slicknav_menutxt {
+        display: block;
+        line-height: 1.188em;
+        float: left;
+        color: #fff;
+        font-weight: 700;
+        text-shadow: 0 1px 3px #000;
+        padding-top: 40px
+    }
+    .slicknav_menu,
+    .slicknav_menu * {
+        box-sizing: border-box
+    }
+    .slicknav_nav {
+        clear: both;
+        margin: 0;
+        font-size: .875em;
+        list-style: none;
+        overflow: hidden;
+        padding: 0
+    }
+    .slicknav_nav a {
+        color: var(--text-color);
+        margin: 2px 5px
+    }
+    .slicknav_nav a:hover {
+        background: 0 0
+    }
+    .slicknav_nav li {
+        border-left: 1px solid var(--border-color);
+        border-right: 1px solid var(--border-color);
+        border-top: 1px solid var(--border-color)
+    }
+    .slicknav_nav li:last-child {
+        border-bottom: 1px solid var(--border-color)
+    }
+    .slicknav_nav ul {
+        list-style: none;
+        overflow: hidden;
+        padding: 0
+    }
+    .slicknav_nav li,
+    .slicknav_nav ul {
+        margin: 0;
+        background: var(--bg-color);
+        display: block
+    }
+    .brand-hidden {
+        display: none
+    }
+    h2 {
+        text-align: left
+    }
+    nav label a.menu-item {
+        display: inline
+    }
+    label a.menu-item:after {
+        content: var(--theme-toggle-text)
+    }
+    .slicknav_nav {
+        color: var(--text-color)
+    }
+}
