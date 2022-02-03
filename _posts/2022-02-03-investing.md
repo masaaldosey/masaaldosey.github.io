@@ -3,7 +3,7 @@ title: How I started investing at the age of 26
 layout: post
 summary: Overview of broker partner, first trade and current portfolio
 ---
-
+<meta name="og:image" content="https://masaaldosey.github.io/files/favicon64.png">
 
 I am 26 years of age and working full-time since October last year. Back in November 2021, I was speaking with my friend
 Gaurav. During the conversation, we started discussing about finances and investing opportunities. He spoke about his plans 
