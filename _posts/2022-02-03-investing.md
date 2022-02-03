@@ -51,7 +51,7 @@ It has been a month since I executed the first trade. My current portfolio consi
 - Nvidia Corporation (<a target="_blank" rel="noopener" href="https://www.google.com/finance/quote/NVDA:NASDAQ">NVDA</a>)
 - Advanced Micro Devices Inc.(<a target="_blank" rel="noopener" href="https://www.google.com/finance/quote/AMD:NASDAQ">AMD</a>)
 - Fortiss Inc. (<a target="_blank" rel="noopener" href="https://www.google.com/finance/quote/FTS:NYSE">FTS</a>)
-- Apple Inc. (<a target="_blank" rel="noopener" href="https://www.google.com/finance/quote/AAPL:NASDAQ">AAPL</a>
+- Apple Inc. (<a target="_blank" rel="noopener" href="https://www.google.com/finance/quote/AAPL:NASDAQ">AAPL</a>)
 - Schneider Electric SE (<a target="_blank" rel="noopener" href="https://www.google.com/finance/quote/SU:EPA">SU</a>)
 - ASML Holding NV (<a target="_blank" rel="noopener" href="https://www.google.com/finance/quote/ASML:AMS">ASML</a>)
 
