@@ -12,7 +12,7 @@ I am 26 years of age and working full-time since October last year. Back in Nove
 Gaurav. During the conversation, we started discussing about finances and investing opportunities. He spoke about his plans 
 and the steps he had taken so far. At that moment, something clicked in my brain. Like a button. I also wanted to invest! 
 So, I asked him about how to get started. I listened with utmost interest. Two months have passed since. Today, I invest 
-monthly and trade a couple times per month on the [stock market](https://www.investopedia.com/terms/s/stockmarket.asp). 
+monthly and trade a couple times per month on the <a target="_blank" rel="noopener" href="https://www.investopedia.com/terms/s/stockmarket.asp">stock market</a>. 
 I had to complete two main steps to start investing:
 1. Choose a broker and open a depot
 2. Invest! 
