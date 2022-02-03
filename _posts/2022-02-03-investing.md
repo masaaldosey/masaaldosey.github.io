@@ -40,7 +40,7 @@ It was Decemeber 2021. I had deposited an additional &euro;1000,00 into my broke
 Searched for Nvidia. Bought one share. And just like that I executed my first trade. A part of me did not believe that it was so simple.
 
 <figure>
-    <span class="marginnote">A picture depicting the app UI. Taken on 02 February 2022.</span>
+    <span class="marginnote">A picture depicting the app UI. Taken on 03 February 2022.</span>
     <img src="../files/investing/IMG_7605.jpg"/>
 </figure>
 
