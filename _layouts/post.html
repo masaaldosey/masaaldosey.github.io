@@ -25,10 +25,10 @@
             document.documentElement.classList.toggle("light-theme");
         }
 
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             const pD = window.matchMedia("(prefers-color-scheme: dark)");
             const tt = document.querySelector("#darkmode");
-            tt.addEventListener('change', function() {
+            tt.addEventListener('change', function () {
                 if (pD.matches) {
                     document.documentElement.classList.toggle("light-theme");
                     var theme = document.documentElement.classList.contains("light-theme") ? "light" : "dark";
@@ -45,24 +45,28 @@
     <link rel="stylesheet" href="/css/blog.min.css">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@masaaldosey">
+    <meta property="twitter:description" content={{ page.summary }}>
     <meta name="twitter:domain" content="https://masaaldosey.github.io">
     <meta property="og:url" content={{ page.url | relative_url}}>
     <meta property="og:title" content={{ page.title }}>
     <meta property="og:description" content={{ page.summary }}>
-    <meta property="twitter:description" content={{ page.summary }}>
+    <meta name="og:image" content="/files/favicon64.png">
 </head>
 
 <body>
 
     <nav>
-        <div class="slicknav_menu"><a href="#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt"></span><span class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
+        <div class="slicknav_menu"><a href="#" aria-haspopup="true" tabindex="0"
+                class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt"></span><span
+                    class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span
+                        class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
             <ul class="slicknav_nav slicknav_hidden" style="display: none;" aria-hidden="true" role="menu">
                 <li>
                     <label for="darkmode">
-          <a class="menu-item" tabindex="-1">Lights</a>
-          <input type="checkbox">
-          <div></div>
-        </label>
+                        <a class="menu-item" tabindex="-1">Lights</a>
+                        <input type="checkbox">
+                        <div></div>
+                    </label>
                 </li>
 
                 <li>
@@ -76,15 +80,16 @@
             </ul>
         </div>
         <a class="navbar-brand" href="/">
-            <span class="brand-title">Leela</span><span class="brand-title brand-hidden"> Sai Prabhat</span><span class="brand-title brand-dot">.</span>
+            <span class="brand-title">Leela</span><span class="brand-title brand-hidden"> Sai Prabhat</span><span
+                class="brand-title brand-dot">.</span>
         </a>
         <ul id="menu">
             <li>
                 <label for="darkmode">
-          <a class="menu-item">Lights</a>
-          <input type="checkbox" id="darkmode">
-          <div id="themetoggleimg"></div>
-        </label>
+                    <a class="menu-item">Lights</a>
+                    <input type="checkbox" id="darkmode">
+                    <div id="themetoggleimg"></div>
+                </label>
             </li>
 
             <li>
@@ -109,15 +114,15 @@
                         <div class="author-line" style="display:none;">
                             Written by
                             <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-              <span itemprop="name">
-                Leela Sai Prabhat
-              </span>
+                                <span itemprop="name">
+                                    Leela Sai Prabhat
+                                </span>
                             </span>
                         </div>
                         Published on
                         <time datetime="2017-09-14T21:19:41+03:00" itemprop="datePublished">
-              {{ page.date | date: "%b %-d, %Y " }}
-            </time>
+                            {{ page.date | date: "%b %-d, %Y " }}
+                        </time>
 
                     </div>
                     <div class="pull-right">
@@ -147,7 +152,8 @@
                     <hr>
                     <div id="no-comments">
                         <br>
-                        <span>I don't have comments on this blog, but if you'd like to leave positive feedback you can contact me by <a href="mailto:prabhatreddyk+blog@gmail.com ">Email</a> or via <a href="https://twitter.com/masaaldosey
+                        <span>I don't have comments on this blog, but if you'd like to leave positive feedback you can
+                            contact me by <a href="mailto:prabhatreddyk+blog@gmail.com ">Email</a> or via <a href="https://twitter.com/masaaldosey
                                 " target="_blank ">Twitter</a>.</span>
                     </div>
 
@@ -166,17 +172,18 @@
 
     <footer>
         <span id="copyright ">
-        &hairsp; © Leela Sai Prabhat, 2022.
-      </span>
+            &hairsp; © Leela Sai Prabhat, 2022.
+        </span>
     </footer>
 
-    <script src="/js/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin=" anonymous "></script>
+    <script src="/js/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin=" anonymous "></script>
     <script src="/js/jquery.slicknav.min.js "></script>
     <script src="/js/navbar.min.js "></script>
     <script src="/js/jquery.cookie.min.js "></script>
     <script src="/js/kudos.min.js "></script>
     <script>
-        $(function() {
+        $(function () {
             $('#menu').slicknav({
                 prependTo: 'nav',
                 label: ''
