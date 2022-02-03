@@ -4,7 +4,6 @@ layout: post
 summary: Overview of broker partner, first trade and current portfolio
 ---
 <meta name="og:image" content="https://masaaldosey.github.io/files/investing/IMG_7605.jpg">
-<meta property="og:url" content={{ page.url | absolute_url}}>
 <meta property="og:title" content="How I started investing at the age of 26">
 <meta property="og:description" content="Overview of broker partner, first trade and current portfolio">
 
