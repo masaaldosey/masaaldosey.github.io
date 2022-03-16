@@ -25,10 +25,10 @@
             document.documentElement.classList.toggle("light-theme");
         }
 
-        window.addEventListener('load', function () {
+        window.addEventListener('load', function() {
             const pD = window.matchMedia("(prefers-color-scheme: dark)");
             const tt = document.querySelector("#darkmode");
-            tt.addEventListener('change', function () {
+            tt.addEventListener('change', function() {
                 if (pD.matches) {
                     document.documentElement.classList.toggle("light-theme");
                     var theme = document.documentElement.classList.contains("light-theme") ? "light" : "dark";
@@ -53,8 +53,7 @@
 <body>
 
     <nav>
-        <div class="slicknav_menu"><a href="#" aria-haspopup="true" tabindex="0"
-                class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt"></span><span
+        <div class="slicknav_menu"><a href="#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt"></span><span
                     class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span
                         class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
             <ul class="slicknav_nav slicknav_hidden" style="display: none;" aria-hidden="true" role="menu">
@@ -77,8 +76,7 @@
             </ul>
         </div>
         <a class="navbar-brand" href="/">
-            <span class="brand-title">Leela</span><span class="brand-title brand-hidden"> Sai Prabhat</span><span
-                class="brand-title brand-dot">.</span>
+            <span class="brand-title">Leela</span><span class="brand-title brand-hidden"> Sai Prabhat</span><span class="brand-title brand-dot">.</span>
         </a>
         <ul id="menu">
             <li>
@@ -151,7 +149,8 @@
                         <br>
                         <span>I don't have comments on this blog, but if you'd like to leave positive feedback you can
                             contact me by <a href="mailto:prabhatreddyk+blog@gmail.com ">Email</a> or via <a href="https://twitter.com/masaaldosey
-                                " target="_blank ">Twitter</a>.</span>
+                                " target="_blank ">Twitter</a>. If you would like to support me,
+                             consider buying me a <a href="https://paypal.me/masaaldosey" target="_blank ">coffee</a>.</span>
                     </div>
 
                 </footer>
@@ -173,14 +172,13 @@
         </span>
     </footer>
 
-    <script src="/js/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin=" anonymous "></script>
+    <script src="/js/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin=" anonymous "></script>
     <script src="/js/jquery.slicknav.min.js "></script>
     <script src="/js/navbar.min.js "></script>
     <script src="/js/jquery.cookie.min.js "></script>
     <script src="/js/kudos.min.js "></script>
     <script>
-        $(function () {
+        $(function() {
             $('#menu').slicknav({
                 prependTo: 'nav',
                 label: ''
