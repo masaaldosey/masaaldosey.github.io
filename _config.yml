@@ -64,7 +64,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-cv_url: cv.pdf
+cv_url: assets/pdf/cv.pdf
 github_username: masaaldosey # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: masaaldosey # your Twitter handle
