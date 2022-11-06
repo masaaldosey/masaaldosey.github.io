@@ -3,7 +3,7 @@ layout: page
 permalink: /music/
 title: music
 description: Links to playlists curated by me.
-nav: true
+nav: false
 nav_order: 5
 ---
 
