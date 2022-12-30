@@ -23,5 +23,6 @@ I did my master thesis at the Chair for [Computer Aided Medical Procedures](http
 When I am not working, I like to play almost any sport, read, watch movies and play video games. I also have a keen interest in Personal Finance.
 
 - [🎥 Movies](https://www.notion.so/leelasaiprabhat/7f0acbf130864c2e9d8941aa61de6e6f?v=8dfa581f7d104d90ad6595d8eca57572){:target="\_blank"}
+- [📺 TV Series](https://www.notion.so/leelasaiprabhat/3177025ee29b4f59863e0841c5b1ca9f?v=cc35bdf886ba4399bbe17f009e73de46){:target="\_blank"}
 - [📚 Books](https://www.notion.so/leelasaiprabhat/6009deb485244a26920bdd3b2f1842b6?v=0daabeb705d74f50ab03928105c18970){:target="\_blank"}
 - [🎮 Video Games](https://www.notion.so/leelasaiprabhat/25e6d0f6589144ed894eff6272726154?v=2fa3e7ca2bce4934b52635c0c72ca8f1){:target="\_blank"}
