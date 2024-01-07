@@ -20,7 +20,7 @@ Currently, I work as a software developer at [Agile Robots AG](https://www.agile
 
 I did my master thesis at the Chair for [Computer Aided Medical Procedures](https://www.cs.cit.tum.de/camp/start/){:target="\_blank"} (CAMP). I was guided by [Prof. Dr. Nassir Navab](https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/){:target="\_blank"} and [Dr. Anees Kazi](https://www.cs.cit.tum.de/camp/members/senior-research-scientists/anees-kazi/){:target="\_blank"}. My research tackled the [Cross-modal Retrieval](https://paperswithcode.com/task/cross-modal-retrieval/codeless?page=6){:target="\_blank"} problem with the help of [Graph Neural Networks](https://en.wikipedia.org/wiki/Graph_neural_network){:target="\_blank"}.
 
-When I am not working, I like to play almost any sport, read, watch movies and play video games. I also have a keen interest in Personal Finance.
+When I am not working, I like to play almost any sport, read and watch movies. I also have a keen interest in Personal Finance.
 
 - [🎥 Movies](https://www.notion.so/leelasaiprabhat/7f0acbf130864c2e9d8941aa61de6e6f?v=8dfa581f7d104d90ad6595d8eca57572){:target="\_blank"}
 - [📺 TV Series](https://www.notion.so/leelasaiprabhat/3177025ee29b4f59863e0841c5b1ca9f?v=cc35bdf886ba4399bbe17f009e73de46){:target="\_blank"}
