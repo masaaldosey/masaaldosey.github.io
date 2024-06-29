@@ -6,6 +6,7 @@ description:
 display_categories: [reading, read]
 nav: true
 nav_order: 6
+horizontal: true
 ---
 
 
