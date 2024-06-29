@@ -6,7 +6,7 @@ description:
 display_categories: [reading, read]
 nav: true
 nav_order: 6
-horizontal: true
+horizontal: false
 ---
 
 
@@ -16,13 +16,44 @@ horizontal: true
   <!-- Display categorized projects -->
   {%- for category in page.display_categories %}
   <h2 class="category">{{ category }}</h2>
-  {%- assign categorized_projects = site.books | where: "category", category -%}
+  {%- assign categorized_projects = site.books| reverse | where: "category", category -%}
   {%- assign sorted_projects = categorized_projects | sort: "importance" %}
-   <div class="grid">
+  <!-- Generate cards for each project -->
+  {% if page.horizontal -%}
+  <div class="container">
+    <div class="row row-cols-2">
+    {%- for project in sorted_projects -%}
+      {% include projects_horizontal.html %}
+    {%- endfor %}
+    </div>
+  </div>
+  {%- else -%}
+  <div class="grid">
     {%- for project in sorted_projects -%}
       {% include projects.html %}
     {%- endfor %}
   </div>
-  {% endfor %}
   {%- endif -%}
+  {% endfor %}
+
+{%- else -%}
+<!-- Display projects without categories -->
+  {%- assign sorted_projects = site.books | reverse | sort: "importance" -%}
+  <!-- Generate cards for each project -->
+  {% if page.horizontal -%}
+  <div class="container">
+    <div class="row row-cols-2">
+    {%- for project in sorted_projects -%}
+      {% include projects_horizontal.html %}
+    {%- endfor %}
+    </div>
+  </div>
+  {%- else -%}
+  <div class="grid">
+    {%- for project in sorted_projects -%}
+      {% include projects.html %}
+    {%- endfor %}
+  </div>
+  {%- endif -%}
+{%- endif -%}
 </div>
