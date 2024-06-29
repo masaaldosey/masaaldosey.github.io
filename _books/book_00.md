@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sapiens
-description: Completed on 01.05.2022
+description: Completed on 05.01.2022
 img: assets/img/books/sapiens.jpg
 importance: 1
 category: read
