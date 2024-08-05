@@ -3,7 +3,7 @@ layout: page
 permalink: /books/
 title: books
 description: 
-display_categories: [reading, read]
+# display_categories: [reading, read]
 nav: true
 nav_order: 6
 horizontal: false
