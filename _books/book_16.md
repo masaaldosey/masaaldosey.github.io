@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Padmavathi The Harlot & Other Stories 
+title: Padmavati The Harlot & Other Stories 
 description: Completed on 10.01.2023
 img: assets/img/books/padmavathi.jpg
 importance: 1
