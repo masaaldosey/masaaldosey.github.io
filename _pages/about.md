@@ -19,4 +19,4 @@ Hi! I am a software developer located in Munich. Prior to this, I completed my m
 I come from India and have been living in Munich since 2018.
 
 I love to spend time with my wife :smiling_face_with_three_hearts:. If there is time left, I try to play almost any sport, watch [movies](https://letterboxd.com/masaaldosey/){:target="\_blank"}
-and read.
+and [read](/books/).
