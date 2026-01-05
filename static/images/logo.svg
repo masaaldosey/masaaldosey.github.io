@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 15">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 14">
   <style>
     .logo-text { 
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      font-weight: 400;
-      font-size: 14px;
+      font-weight: 450;
+      font-size: 13px;
       fill: #333;
     }
   </style>
   
   <!-- Main text -->
-  <text x="0" y="12" class="logo-text">Leela Kondamadugula</text>
+  <text x="0" y="11" class="logo-text">Leela Kondamadugula</text>
   
 
 </svg>
