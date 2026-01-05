@@ -1,0 +1,25 @@
+baseURL = "https://leelakondamadugula.com"
+languageCode = "en-us"
+title = "Leela Kondamadugula's personal homepage"
+pagination.pagerSize = 20
+rssLimit = 20
+
+[params]
+subtitle = "Thoughts on tech, finance, and life"
+
+[taxonomies]
+   tag = "tags"
+   author = "authors"
+
+[menu]
+   [[menu.header]]
+      identifier = "home"
+      name = "Home"
+      url = "/"
+      weight = 1
+
+   [[menu.header]]
+      identifier = "notes"
+      name = "Notes"
+      url = "/blog"
+      weight = 2
