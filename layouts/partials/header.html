@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-	{{- $title := ( .Title ) -}}
-	{{- $siteTitle := ( .Site.Title ) -}}
+	{{- $title := .Title -}}
+	{{- $siteTitle := .Site.Title -}}
+
 	{{- if .IsHome -}}
-	<title>{{ $siteTitle }} {{ if .Site.Params.subtitle }}- {{ .Site.Params.Subtitle }}{{ end }} </title>
+	<title>{{ $siteTitle }}{{ with .Site.Params.subtitle }} - {{ . }}{{ end }}</title>
 	{{- else -}}
 	<title>{{ $title }} - {{ $siteTitle }}</title>
 	{{- end -}}
 
 	<meta charset="utf-8" />
-	<meta name="title" content="{{.Site.Title}}">
-	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.subtitle }}{{ end }}" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!-- Open Graph -->
-	{{- if .IsHome -}}
-	<meta property="og:title" content="{{ $siteTitle }} {{ if .Site.Params.subtitle }}- {{ .Site.Params.Subtitle }}{{ end }}" />
-	{{- else -}}
-	<meta property="og:title" content="{{ $title }} - {{ $siteTitle }}" />
-	{{- end -}}
+	<meta name="title" content="{{ .Site.Title }}">
+	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.subtitle }}{{ end }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.subtitle }}{{ end }}" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="{{ .Permalink }}" />
-	
-	<link rel="shortcut icon" href='{{ "images/leela.jpg" | relURL}}' />
-	
-	{{ with .OutputFormats.Get "rss" -}}
-	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-	{{ end -}}
-	
-	{{ if .Site.Params.Thumbnail }}
-		<meta property="og:image" content="images/{{ .Site.Params.Thumbnail }}">
+	<!-- Open Graph -->
+	<meta property="og:title" content="{{ if .IsHome }}{{ $siteTitle }}{{ with .Site.Params.subtitle }} - {{ . }}{{ end }}{{ else }}{{ $title }} - {{ $siteTitle }}{{ end }}">
+	<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.subtitle }}{{ end }}">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{{ .Permalink }}">
+
+	<link rel="icon" href='{{ "images/favicon.png" | relURL }}'>
+
+	{{ with .OutputFormats.Get "rss" }}
+	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
+	{{ end }}
+
+	{{ with .Site.Params.Thumbnail }}
+	<meta property="og:image" content='{{ printf "images/%s" . | relURL }}'>
 	{{ end }}
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" media="screen" href='{{ "style.css" | relURL }}' />
+	<link rel="stylesheet" href='{{ "style.css" | relURL }}'>
 </head>
+
 <body>
-	{{ .Site.Params.pagination.pagerSize }}
 	<section class="container wrap">
 		<div class="header">
 			<div class="logo">
-				<a href="{{ .Site.BaseURL }}"><img src='{{ "images/favicon.png" | relURL }}' alt="" class="photo" /></a>
-				<a href="{{ .Site.BaseURL }}"><img alt="{{ .Site.Title }}" src='{{ "images/logo.svg" | relURL }}' style="height: 28px;" /></a>
-				<p class="tagline">{{ .Site.Params.Subtitle }}</p>
+				<a href='{{ "/" | relURL }}'>
+					<img src='{{ "images/favicon.png" | relURL }}' alt="" class="photo">
+				</a>
+
+				<a href='{{ "/" | relURL }}'>
+					<img src='{{ "images/logo.svg" | relURL }}' alt="{{ .Site.Title }}" style="height: 28px;">
+				</a>
+
+				<p class="tagline">{{ .Site.Params.subtitle }}</p>
 			</div>
+
 			<nav class="nav">
 				{{ $cur := . }}
-				{{ range $.Site.Menus.header }}
+				{{ range .Site.Menus.header }}
 					{{ $active := in $cur.RelPermalink .URL }}
-					<a class="{{ if $active }} active {{ end }}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+					<a class="{{ if $active }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
 				{{ end }}
 
-				<a href="{{ .Site.BaseURL }}/index.xml">
-					<img src='{{ "images/feed.svg" | relURL }}' alt="Subscribe to feed" />
+				<a href='{{ "index.xml" | relURL }}'>
+					<img src='{{ "images/feed.svg" | relURL }}' alt="Subscribe to feed">
 				</a>
 			</nav>
 		</div>
