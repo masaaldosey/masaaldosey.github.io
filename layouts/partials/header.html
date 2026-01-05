@@ -24,7 +24,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{ .Permalink }}" />
 	
-	<link rel="shortcut icon" href="images/leela.jpg" />
+	<link rel="shortcut icon" href='{{ "images/leela.jpg" | relURL}}' />
 	
 	{{ with .OutputFormats.Get "rss" -}}
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
@@ -37,15 +37,15 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
 
-	<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href='{{ "style.css" | relURL }}' />
 </head>
 <body>
 	{{ .Site.Params.pagination.pagerSize }}
 	<section class="container wrap">
 		<div class="header">
 			<div class="logo">
-				<a href="{{ .Site.BaseURL }}"><img src="images/favicon.png" alt="" class="photo" /></a>
-				<a href="{{ .Site.BaseURL }}"><img alt="{{ .Site.Title }}" src="images/logo.svg" style="height: 28px;" /></a>
+				<a href="{{ .Site.BaseURL }}"><img src='{{ "images/favicon.png" | relURL }}' alt="" class="photo" /></a>
+				<a href="{{ .Site.BaseURL }}"><img alt="{{ .Site.Title }}" src='{{ "images/logo.svg" | relURL }}' style="height: 28px;" /></a>
 				<p class="tagline">{{ .Site.Params.Subtitle }}</p>
 			</div>
 			<nav class="nav">
@@ -56,7 +56,7 @@
 				{{ end }}
 
 				<a href="{{ .Site.BaseURL }}/index.xml">
-					<img src="images/feed.svg" alt="Subscribe to feed" />
+					<img src='{{ "images/feed.svg" | relURL }}' alt="Subscribe to feed" />
 				</a>
 			</nav>
 		</div>
