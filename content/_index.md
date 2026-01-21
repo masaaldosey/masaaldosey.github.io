@@ -8,8 +8,7 @@ I like to work at the intersection of hardware and software. Today, I am located
 Whether it is through technology, collaboration or small everyday actions. I want to help
 people grow and create things that make life a little fairer, kinder and, more connected.
 
-Apart from work, I really enjoy spending time with my wife Preethika, my bilogical sister Meghu (Meghana), our families and,
-friends. I love working out, [reading](https://www.goodreads.com/review/list/148634318-leela-kondamadugula?ref=nav_mybooks&shelf=read), cooking and, enjoy all genres of music.
+Apart from work, I really enjoy spending time with my wife [Preethika](https://www.linkedin.com/in/naga-preethika-mule-912bb617a/), my bilogical sister Meghu (Meghana), our families and, friends. I love working out, [reading](https://www.goodreads.com/review/list/148634318-leela-kondamadugula?ref=nav_mybooks&shelf=read), cooking and, enjoy all genres of music.
 
 ![With Preethika](images/2025-with-wife.jpeg "With Preethika (Venice, 2025)")
 
