@@ -426,6 +426,12 @@ ul.flat li {
     text-align: right;
 }
 
+.logo-svg {
+    height: clamp(18px, 3.5vw, 28px);
+    width: auto;
+    display: block;
+}
+
 @media (max-width: 670px) {
     .wrap {
         padding: 15px;
