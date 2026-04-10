@@ -1,6 +1,6 @@
 baseURL = "https://leelakondamadugula.com"
 languageCode = "en-us"
-title = "Leela Kondamadugula's personal homepage"
+title = "Leela Kondamadugula"
 pagination.pagerSize = 20
 rssLimit = 20
 

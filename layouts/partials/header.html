@@ -50,7 +50,7 @@
 
 				<div class="logo-name-block">
 					<a href='{{ "/" | relURL }}'>
-						<img src='{{ "images/logo.svg" | relURL }}' alt="{{ .Site.Title }}" class="logo-svg">
+						<a href='{{ "/" | relURL }}' class="logo-name">{{ .Site.Title }}</a>
 					</a>
 					<p class="tagline">{{ .Site.Params.subtitle }}</p>
 				</div>
