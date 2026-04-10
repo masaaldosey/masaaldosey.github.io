@@ -6,10 +6,13 @@
 * {
     box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: Inter, sans-serif;
     font-weight: 400;
@@ -22,38 +25,48 @@ a {
     color: var(--primary);
     text-decoration: none;
 }
-    a:hover {
-        color: #000;
-    }
-    code {
-        display: inline-block;
-        background: #f4f4f4;
-        color: #000;
-        padding: 3px 5px;
-        font-size: 0.9em;
-    }
-    pre code {
-        display: block;
-    }
-    .post .highlight {
-        background: #f4f4f4;
-        padding: 5px;
-    }
-    .post img {
-        border-radius: 5px;
-    }
 
-    .content a {
-        word-break: break-word;
-        text-decoration: underline;
-        text-decoration-color: var(--primary);
-        text-decoration-thickness: 2px;
-    }
-        .content a:hover {
-            text-decoration-color: #000;
-        }
+a:hover {
+    color: #000;
+}
 
-html,button,input,select,textarea {
+code {
+    display: inline-block;
+    background: #f4f4f4;
+    color: #000;
+    padding: 3px 5px;
+    font-size: 0.9em;
+}
+
+pre code {
+    display: block;
+}
+
+.post .highlight {
+    background: #f4f4f4;
+    padding: 5px;
+}
+
+.post img {
+    border-radius: 5px;
+}
+
+.content a {
+    word-break: break-word;
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+    text-decoration-thickness: 2px;
+}
+
+.content a:hover {
+    text-decoration-color: #000;
+}
+
+html,
+button,
+input,
+select,
+textarea {
     color: #333;
 }
 
@@ -83,7 +96,7 @@ img {
 }
 
 a img {
-    border:none;
+    border: none;
 }
 
 figure {
@@ -91,6 +104,7 @@ figure {
     display: block;
     text-align: center;
 }
+
 figure figcaption {
     font-size: .775em;
     line-height: .775em;
@@ -126,7 +140,12 @@ blockquote em {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 500;
     line-height: 1.5em;
     margin: 45px 0 20px 0;
@@ -135,6 +154,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 2.75rem;
 }
+
 h2 {
     font-size: 2rem;
 }
@@ -159,6 +179,7 @@ h6 {
 .half {
     max-width: 60%;
 }
+
 .align-center {
     text-align: center;
 }
@@ -174,9 +195,10 @@ h6 {
 .float-right {
     float: right;
 }
-    figure.float-right {
-        margin: 0 15px 0 15px;
-    }
+
+figure.float-right {
+    margin: 0 15px 0 15px;
+}
 
 .text-small {
     font-size: .875em;
@@ -223,34 +245,41 @@ ul.flat li {
     display: flex;
     flex-wrap: wrap;
 }
-    .header .logo, .header nav {
-        flex-grow: 1;
-    }
-    .header .logo .tagline {
-        color: var(--grey);
-        margin: 5px 0 0 0;
-    }
-    .header .photo {
-        border-radius: 100%;
-        max-width: 74px;
-        float: left;
-        margin: -4px 30px 0 0;
-    }
-    .header nav {
-        text-align: right;
-        line-height: 1em;
-    }
-    .header nav a {
-        display: inline-block;
-        margin-left: 30px;
-    }
-    .header nav .feed img {
-        width: 16px;
-        height: auto;
-    }
+
+.header .logo,
+.header nav {
+    flex-grow: 1;
+}
+
+.header .logo .tagline {
+    color: var(--grey);
+    margin: 5px 0 0 0;
+}
+
+.header .photo {
+    border-radius: 100%;
+    max-width: 74px;
+    float: left;
+    margin: -4px 30px 0 0;
+}
+
+.header nav {
+    text-align: right;
+    line-height: 1em;
+}
+
+.header nav a {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.header nav .feed img {
+    width: 16px;
+    height: auto;
+}
 
 .content {
-    margin:0 15px;
+    margin: 0 15px;
 }
 
 .header .site-description nav {
@@ -280,88 +309,109 @@ ul.flat li {
     margin: 60px 0 30px 0;
     padding: 0;
 }
-    .posts .post {
-        display: flex;
-        padding: 30px 0;
-        border-bottom: 1px solid #eee;
-    }
-        .posts .post:hover {
-            background: #fafafa;
-        }
-    .posts .date {
-        flex: 10%;
-        color: var(--grey);
-    }
-    .posts .date .year {
-        color: var(--grey);
-        font-size: 0.875em;
-    }
-    .posts .date .day {
-        font-size: 1.5em;
-        margin-bottom: 5px;
-    }
-    .posts .body {
-        flex: 70%;
-    }
-    .posts .title {
-        margin: 0;
-    }
-        .posts .title a {
-            text-decoration: none;
-        }
-    .posts .domain {
-        color: var(--grey);
-        font-size: 0.875em;
-    }
-    .posts .desc {
-        margin-top: 10px;
-    }
-    .post-header {
-        margin-bottom: 30px;
-    }
-    .post-header .date {
-        margin: 0;
-        color: var(--grey);
-    }
-        .post-header .title {
-            margin: 0;
-        }
+
+.posts .post {
+    display: flex;
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.posts .post:hover {
+    background: #fafafa;
+}
+
+.posts .date {
+    flex: 10%;
+    color: var(--grey);
+}
+
+.posts .date .year {
+    color: var(--grey);
+    font-size: 0.875em;
+}
+
+.posts .date .day {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.posts .body {
+    flex: 70%;
+}
+
+.posts .title {
+    margin: 0;
+}
+
+.posts .title a {
+    text-decoration: none;
+}
+
+.posts .domain {
+    color: var(--grey);
+    font-size: 0.875em;
+}
+
+.posts .desc {
+    margin-top: 10px;
+}
+
+.post-header {
+    margin-bottom: 30px;
+}
+
+.post-header .date {
+    margin: 0;
+    color: var(--grey);
+}
+
+.post-header .title {
+    margin: 0;
+}
 
 .projects {
     margin-top: 60px;
 }
-    .projects .status,
-    .projects .tags {
-        color: var(--grey);
-        font-size: .85em;
-    }
-    .projects h3 {
-        margin: 0 0 10px 0;
-    }
-    .projects h3 a {
-        padding-bottom: 5px;
-        display: inline-block;
-        border-bottom: 1px solid #ddd;
-        text-decoration: none;
-    }
-    .projects h3 a span {
-        color: var(--grey);
-        margin-right: 15px;
-    }
-    .projects li p {
-        margin-bottom: .5em;
-    }
-    .projects li {
-        margin-bottom: 2em;
-        display: flex;
-    }
-    .projects .desc {
-        flex: 70%;
-    }
-    .projects .thumb {
-        flex: 30%;
-        text-align: right;
-    }
+
+.projects .status,
+.projects .tags {
+    color: var(--grey);
+    font-size: .85em;
+}
+
+.projects h3 {
+    margin: 0 0 10px 0;
+}
+
+.projects h3 a {
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none;
+}
+
+.projects h3 a span {
+    color: var(--grey);
+    margin-right: 15px;
+}
+
+.projects li p {
+    margin-bottom: .5em;
+}
+
+.projects li {
+    margin-bottom: 2em;
+    display: flex;
+}
+
+.projects .desc {
+    flex: 70%;
+}
+
+.projects .thumb {
+    flex: 30%;
+    text-align: right;
+}
 
 
 .footer {
@@ -370,12 +420,14 @@ ul.flat li {
     color: var(--grey);
     margin: 30px 0;
 }
-    .footer a {
-        color: #666;
-    }
-    .footer a:hover {
-        color: var(--primary);
-    }
+
+.footer a {
+    color: #666;
+}
+
+.footer a:hover {
+    color: var(--primary);
+}
 
 .tag-cloud {
     margin-top: 20px;
@@ -408,10 +460,11 @@ ul.flat li {
     margin: 0;
     padding: 0 10px;
 }
-    .pagination li:first-child,
-    .pagination li:last-child {
-        display: none;
-    }
+
+.pagination li:first-child,
+.pagination li:last-child {
+    display: none;
+}
 
 .pagination .page-prev {
     margin-right: 20px;
@@ -431,11 +484,38 @@ ul.flat li {
     width: auto;
     display: block;
 }
+.logo-svg {
+    height: clamp(16px, 2.5vw, 22px);
+    width: auto;
+    display: block;
+}
+
+.logo-name-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+.header .logo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.logo-name-block {
+    display: flex;
+    flex-direction: column;
+}
 
 @media (max-width: 670px) {
     .wrap {
         padding: 15px;
     }
+
     .content {
         margin: 0;
     }
@@ -445,14 +525,17 @@ ul.flat li {
     .header {
         margin: 0 0 15px 0;
     }
+
     .header nav {
         display: block;
         text-align: left;
         margin-top: 30px;
     }
+
     .header nav a {
         margin: 0 15px 0 0;
     }
+
     .header {
         display: block;
     }
@@ -468,6 +551,7 @@ ul.flat li {
     .posts .date {
         margin-bottom: 5px;
     }
+
     .posts .post {
         display: block;
     }

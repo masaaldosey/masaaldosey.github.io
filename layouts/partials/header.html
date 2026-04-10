@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	{{- $title := .Title -}}
 	{{- $siteTitle := .Site.Title -}}
@@ -16,8 +17,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Open Graph -->
-	<meta property="og:title" content="{{ if .IsHome }}{{ $siteTitle }}{{ with .Site.Params.subtitle }} - {{ . }}{{ end }}{{ else }}{{ $title }} - {{ $siteTitle }}{{ end }}">
-	<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.subtitle }}{{ end }}">
+	<meta property="og:title"
+		content="{{ if .IsHome }}{{ $siteTitle }}{{ with .Site.Params.subtitle }} - {{ . }}{{ end }}{{ else }}{{ $title }} - {{ $siteTitle }}{{ end }}">
+	<meta property="og:description"
+		content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.subtitle }}{{ end }}">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="{{ .Permalink }}">
 
@@ -45,18 +48,19 @@
 					<img src='{{ "images/favicon.png" | relURL }}' alt="" class="photo">
 				</a>
 
-				<a href='{{ "/" | relURL }}'>
-					<img src='{{ "images/logo.svg" | relURL }}' alt="{{ .Site.Title }}" class="logo-svg">
-				</a>
-
-				<p class="tagline">{{ .Site.Params.subtitle }}</p>
+				<div class="logo-name-block">
+					<a href='{{ "/" | relURL }}'>
+						<img src='{{ "images/logo.svg" | relURL }}' alt="{{ .Site.Title }}" class="logo-svg">
+					</a>
+					<p class="tagline">{{ .Site.Params.subtitle }}</p>
+				</div>
 			</div>
 
 			<nav class="nav">
 				{{ $cur := . }}
 				{{ range .Site.Menus.header }}
-					{{ $active := in $cur.RelPermalink .URL }}
-					<a class="{{ if $active }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+				{{ $active := in $cur.RelPermalink .URL }}
+				<a class="{{ if $active }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
 				{{ end }}
 
 				<a href='{{ "index.xml" | relURL }}'>
