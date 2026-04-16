@@ -5,4 +5,4 @@ date: 2026-01-05
 author: leela
 ---
 
-A collection of thoughts on tech, finance, and life. Browse by [tags](/tags).
+a collection of thoughts on tech, finance, and life. browse by [tags](/tags).
