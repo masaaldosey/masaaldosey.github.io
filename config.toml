@@ -5,7 +5,7 @@ pagination.pagerSize = 20
 rssLimit = 20
 
 [params]
-subtitle = "Thoughts on tech, finance, and life"
+subtitle = "thoughts on tech, finance, and life"
 
 [taxonomies]
    tag = "tags"
