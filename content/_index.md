@@ -23,4 +23,4 @@ Especially, for those navigating life and have a childlike curiosity about it.
 
 ------
 
-Get in touch via [Email](mailto:prabhatreddyk@gmail.com). I love [coffee](https://buymeacoffee.com/leelak).
+Get in touch via [Email](mailto:prabhatreddyk@gmail.com).
